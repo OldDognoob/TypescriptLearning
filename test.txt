@@ -1,0 +1,2 @@
+A class based on Typescript , learn typescript from scratch. 
+It will include all kind of new things as well I will try to create a project.
