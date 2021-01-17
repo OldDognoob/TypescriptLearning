@@ -68,10 +68,6 @@ This would be the type of the object differently:
     }
 }*/
 
-/*-----Working with Tuples----- */
-
-/*-----Working with Enums----- */
-
 /*-----The "any" Type----- */
 
 /*-----Union Types----- */
