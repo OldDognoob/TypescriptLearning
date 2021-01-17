@@ -1,37 +1,13 @@
-/* Function return type & "void" */
-function add(n1, n2) {
-    return n1 + n2;
+/* The Unknown Type */
+var userInput;
+var userName;
+userInput = 5;
+userInput = "Dimos";
+if (typeof userInput === "string") {
+    userName = userInput;
 }
-// the void function doesn't have a return statement 
-//because it doesn't return anything
-function printResult(num) {
-    console.log("Result: " + num);
+/*The never Type */
+function generateError(message, code) {
+    throw { message: message, errorCode: code };
 }
-/* Function Callbacks */
-function addAndHandler(n1, n2, cb) {
-    var result = n1 + n2;
-    cb(result);
-}
-printResult(add(5, 12));
-/* Function Types */
-// Are functions describing the values and the Parameters
-// A combine function is a function that takes two numbers and return a number
-// now we can say that combine function, take two parameters, where each one takes two numbers and return us a number
-var combineValues;
-// combineValues does not complain because it complies with the definition of line 16
-combineValues = add;
-// but here it complain because it takes a number but it doesnt return nothing.
-// combineValues = printResult;
-// combineValues = 6; 
-console.log(combineValues(8, 8));
-addAndHandler(10, 20, function (result) {
-    console.log(result);
-});
-function sendRequest(data, cb) {
-    // ... sending a request with "data"
-    return cb({ data: 'Hi there!' });
-}
-sendRequest('Send this!', function (response) {
-    console.log(response);
-    return true;
-});
+generateError('An error occur!', 500);
