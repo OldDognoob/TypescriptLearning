@@ -1,4 +1,3 @@
-"use strict";
 /*-----Object Types----- */
 //    const person:{
 //        name:string;

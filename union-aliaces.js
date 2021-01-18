@@ -1,4 +1,3 @@
-"use strict";
 /*-----Union Types----- */
 function combine(input1, input2, resultConversion) {
     let result;

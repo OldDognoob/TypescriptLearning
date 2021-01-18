@@ -1,14 +1,9 @@
-//Code goes here!
-const userFirstName = 'Max';
-let age = 30;
+class Department {
+    name: string;
 
-age= 29;
-
-function plus(a:number, b:number){
-    let result;
-    result = a +b;
-    return result;
+    constructor(n: string) {
+        this.name = n;
+    }
 }
 
-const addNumbers = (a: number, b:number)=> a + b;
-
+const accounting = new Department('Accounting');
