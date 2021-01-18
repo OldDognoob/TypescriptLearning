@@ -1,10 +1,6 @@
-"use strict";
-const userFirstName = 'Max';
-let age = 30;
-age = 29;
-function plus(a, b) {
-    let result;
-    result = a + b;
-    return result;
+class Department {
+    constructor(n) {
+        this.name = n;
+    }
 }
-const addNumbers = (a, b) => a + b;
+const accounting = new Department('Accounting');

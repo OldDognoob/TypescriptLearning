@@ -1,4 +1,4 @@
-"use strict";
+/* The Unknown Type */
 let userInput;
 let userName;
 userInput = 5;
