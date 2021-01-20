@@ -7,7 +7,7 @@ function combine(
   input2: Combinable,
   resultConversion: "as-number" | "as-text"
 ) {
-  let result;
+  let result: string | number;
   if (
     (typeof input1 === "number" && typeof input2 === "number") ||
     resultConversion === "as-number"

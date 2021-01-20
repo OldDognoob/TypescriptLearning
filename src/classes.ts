@@ -44,14 +44,14 @@ class AccountingDepartment extends Department {
   private lastReport: string;
   private static instance: AccountingDepartment;
 
-  get mostRecentReport() {
+  get () {
     if (this.lastReport) {
       return this.lastReport;
     }
     throw new Error("No report found.");
   }
 
-  set mostRecentReport(value: string) {
+  set (value: string) {
     if (!value) {
       throw new Error("Please pass in a valid value!");
     }
@@ -114,9 +114,9 @@ const accounting2 = AccountingDepartment.getInstance();
 
 console.log(accounting, accounting2);
 
-accounting.mostRecentReport = "Year End Report";
+// accounting.get = "Year End Report";
 accounting.addReport("Something went wrong...");
-console.log(accounting.mostRecentReport);
+// console.log(accounting.Recent);
 
 accounting.addEmployee("Max");
 accounting.addEmployee("Manu");

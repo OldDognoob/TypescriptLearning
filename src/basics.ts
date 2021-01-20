@@ -24,19 +24,19 @@ Important!!! : we are using string and number NOT String AND Number
 ALWAYS WE USE PRIMITIVE TYPES IN TYPESCRIPT ARE ALL LOWERCASE!!! */
 
 /*-----Number|Strings|Booleans----- */
-function result(n1:number, n2:number, showResult: boolean, phrase: string){
+// function resultNumber(n1:number, n2:number, showResult: boolean, phrase: string){
     // if (typeof n1 !== 'number' || typeof n2 !== 'number'){
     //     throw new Error('Incorrect input!');
     // }
     // because I dont want this to happen I m adding a result
-    const result = n1+ n2;
-    if(showResult){
+    // const result = n1+ n2;
+    // if(showResult){
         // a string combine with two numbers here means all string
-        console.log(phrase + result);
-    }else{
-        return n1 + n2;
-    }
-    }
+    //     console.log(phrase + result);
+    // }else{
+    //     return n1 + n2;
+    // }
+    // }
     /*-----Types Assignment & Type Inference----- */
     const number1=5;
     const number2=2.8;

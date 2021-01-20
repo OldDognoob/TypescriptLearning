@@ -5,7 +5,7 @@ let age = 30;
 age= 29;
 
 function plus(a:number, b:number){
-    let result;
+    let result: number;
     result = a +b;
     return result;
 }

@@ -1,5 +1,5 @@
 /* Function return type & "void" */
-function add(n1: number, n2: number): number {
+function addNumber(n1: number, n2: number): number {
   return n1 + n2;
 }
 // the void function doesn't have a return statement 
@@ -33,7 +33,7 @@ addAndHandler(10, 20, (result) => {
     console.log(result)
 });
 
-function sendRequest(data: string, cb: (response: any) => void) {
+function sendRequest(_data: string, cb: (response: any) => void) {
     // ... sending a request with "data"
     return cb({data: 'Hi there!'});
   }
