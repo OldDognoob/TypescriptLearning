@@ -1,14 +1,14 @@
-//Code goes here!
-const userFirstName = 'Max';
-let age = 30;
+// //Code goes here!
+// const userFirstName = 'Max';
+// let age = 30;
 
-age= 29;
+// age= 29;
 
-function plus(a:number, b:number){
-    let result: number;
-    result = a +b;
-    return result;
-}
+// function plus(a:number, b:number){
+//     let result: number;
+//     result = a +b;
+//     return result;
+// }
 
-const addNumbers = (a: number, b:number)=> a + b;
+// const addNumbers = (a: number, b:number)=> a + b;
 

@@ -38,12 +38,12 @@ ALWAYS WE USE PRIMITIVE TYPES IN TYPESCRIPT ARE ALL LOWERCASE!!! */
     // }
     // }
     /*-----Types Assignment & Type Inference----- */
-    const number1=5;
-    const number2=2.8;
-    const printTotal = true;
-    const resultPhrase = 'Result is: ';
+    // const number1=5;
+    // const number2=2.8;
+    // const printTotal = true;
+    // const resultPhrase = 'Result is: ';
     
-    add(number1, number2);
+    // add(number1, number2);
     
 
 /*-----Nested Object and Types----- */

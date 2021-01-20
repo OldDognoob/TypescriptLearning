@@ -1,31 +1,31 @@
 /*-----Aliases Types----- */
-type Combinable = number | string;
-type ConversionDescriptor = 'as-number' | 'as-text';
+// type Combinable = number | string;
+// type ConversionDescriptor = 'as-number' | 'as-text';
 /*-----Union Types----- */
-function combine(
-  input1: Combinable,
-  input2: Combinable,
-  resultConversion: "as-number" | "as-text"
-) {
-  let result: string | number;
-  if (
-    (typeof input1 === "number" && typeof input2 === "number") ||
-    resultConversion === "as-number"
-  ) {
-    result = +input1 + +input2;
-  } else {
-    result = input1.toString() + input2.toString();
-  }
+// function combine(
+//   input1: Combinable,
+//   input2: Combinable,
+//   resultConversion: "as-number" | "as-text"
+// ) {
+//   let result: string | number;
+//   if (
+//     (typeof input1 === "number" && typeof input2 === "number") ||
+//     resultConversion === "as-number"
+//   ) {
+//     result = +input1 + +input2;
+//   } else {
+//     result = input1.toString() + input2.toString();
+//   }
 
-  return result;
-}
-const combinedAges = combine(30, 26, "as-number");
-console.log(combinedAges);
+//   return result;
+// }
+// const combinedAges = combine(30, 26, "as-number");
+// console.log(combinedAges);
 
 // const combinedStringAges = combine('46', '30', 'as-number')
 
-const combinedNames = combine("Dimos", "Maria", "as-text");
-console.log(combinedNames);
+// const combinedNames = combine("Dimos", "Maria", "as-text");
+// console.log(combinedNames);
 
 /* Type Aliases & Object Types */
 
